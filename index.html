@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mèo CSS</title>
+  <style>
+    body {
+      background-color: #eae1cf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .cat {
+      position: relative;
+      width: 200px;
+      height: 400px;
+    }
+
+    .body {
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      width: 120px;
+      height: 220px;
+      background: black;
+      border-radius: 60% 60% 50% 50%;
+    }
+
+    .head {
+      position: absolute;
+      top: 100px;
+      left: 60px;
+      width: 80px;
+      height: 80px;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .ear {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 30px solid black;
+    }
+
+    .ear.left {
+      top: 90px;
+      left: 55px;
+      transform: rotate(-20deg);
+    }
+
+    .ear.right {
+      top: 90px;
+      left: 95px;
+      transform: rotate(20deg);
+    }
+
+    .eye {
+      position: absolute;
+      width: 15px;
+      height: 5px;
+      background: white;
+      top: 35px;
+      border-radius: 50%;
+    }
+
+    .eye.left {
+      top: 125px;
+      left: 70px;
+      transform: rotate(-10deg);
+    }
+
+    .eye.right {
+      top: 125px;
+      left: 100px;
+      transform: rotate(10deg);
+    }
+
+    .whiskers {
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background: black;
+      top: 50px;
+    }
+
+    .whiskers.left {
+      top: 150px;
+      left: 20px;
+      transform: rotate(-10deg);
+    }
+
+    .whiskers.right {
+      top: 150px;
+      left: 100px;
+      transform: rotate(10deg);
+    }
+
+    .leg {
+      position: absolute;
+      bottom: 0;
+      width: 10px;
+      height: 90px;
+      background: black;
+    }
+
+    .leg.left {
+      left: 80px;
+    }
+
+    .leg.right {
+      left: 100px;
+    }
+.tail {
+      position: absolute;
+      bottom: 20px;
+      left: 120px;
+      width: 100px;
+      height: 20px;
+      background: black;
+      border-radius: 50% 40% 40% 50%;
+      transform: rotate(30deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="cat">
+    <div class="body"></div>
+    <div class="head"></div>
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="whiskers left"></div>
+    <div class="whiskers right"></div>
+    <div class="leg left"></div>
+    <div class="leg right"></div>
+    <div class="tail"></div>
+  </div>
+</body>
+</html>
