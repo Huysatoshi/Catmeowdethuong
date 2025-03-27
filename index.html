@@ -62,7 +62,7 @@
     .eye {
       position: absolute;
       width: 15px;
-      height: 5px;
+      height: 15px;
       background: white;
       top: 35px;
       border-radius: 50%;
@@ -78,6 +78,26 @@
       top: 125px;
       left: 100px;
       transform: rotate(10deg);
+    }
+
+    .eyedot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: black;
+      top: 35px;
+      border-radius: 50%;
+    }
+
+    .eyedot.dotleft {
+      top: 130px;
+      left: 73px;
+      transform: rotate(-10deg);
+    }
+    .eyedot.dotright {
+      top: 130px;
+      left: 103px;
+      transform: rotate(-10deg);
     }
 
     .whiskers {
@@ -115,7 +135,7 @@
     .leg.right {
       left: 100px;
     }
-.tail {
+    .tail {
       position: absolute;
       bottom: 20px;
       left: 120px;
@@ -135,6 +155,8 @@
     <div class="ear right"></div>
     <div class="eye left"></div>
     <div class="eye right"></div>
+    <div class="eyedot dotleft"></div>
+    <div class="eyedot dotright"></div>
     <div class="whiskers left"></div>
     <div class="whiskers right"></div>
     <div class="leg left"></div>
